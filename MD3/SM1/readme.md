@@ -37,7 +37,7 @@ if (media >= 6) {
 }
 ```
 
-## ATIVIDADE 2:
+## ATIVIDADE 2: Módulo 3. Programação JavaScript (JS) e teste de unidade. Semana 2 - JavaScript básico 2: exemplos de JavaScript básico no VSCode
 Crie um programa Javascript baseado nas tarefas descritas a seguir:
 
 1. Crie um array com 10 elementos e mostre-os na tela usando cada uma das estruturas de repetição: 
