@@ -1,4 +1,5 @@
-##Atividade
+## ATIVIDADE
+
 Agora que você aprendeu mais sobre Git e Github,  seu desafio é: 
 
 - Instalar o Git em seu computador;
