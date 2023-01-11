@@ -1,4 +1,4 @@
-## ATIVIDADES: semana 5 do Módulo 2: Criação de sites HTML/CSS, GIT para controle de versão e SQL.
+## ATIVIDADES: semana 5 do Módulo 2: Criação de sites HTML/CSS, GIT para controle de versão e SQL.(parte 1)
 
 Agora que você aprendeu mais sobre SQL, seu desafio é instalar e configurar seu ambiente PostgreSQL e replicar as consultas mostradas no vídeo pelo professor Rodrigo Azevedo. O material utilizado no vídeo está disponível no drive da turma.
 
