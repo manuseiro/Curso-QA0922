@@ -1,0 +1,211 @@
+/*RESET GENERICO*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab';
+}
+body {
+    margin: 0;
+}
+
+/*CONTEINER - LOGIN*/
+.container-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login .bg-box{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('bg-container_mobile.png') no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+/*CONTEINER - LOGIN*/
+.container-login .content-box{
+    position:absolute;
+    width: 100%;
+    height: auto;
+    padding:0 15px;
+}
+.container-login .content-box .form-box{
+    width: 100%;
+    padding: 2rem;
+    background: #FFF;
+    border-radius: 5px;
+}
+.container-login .form-login{
+    width: 100%;
+    max-width: 340px;
+}
+.content-box .form-box h1{
+    margin: 0 auto 100px auto;
+    width: 154px;
+    height: 55px;
+}
+.content-box .form-box .login-text,.criar-conta{
+    display: flex;
+    justify-content: center;
+}
+.content-box .form-box .login-text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+/*FORM - LOGIN*/
+.content-box .form-box .input-box{
+    margin-bottom: 8px;
+}
+.content-box .form-box .input-box input{
+    padding: 17px;
+    outline: none;
+    font-weight: 400;
+    border: 1px;
+    font-size: 16px;
+    color: #666360;
+    background:transparent;
+}
+.content-box .form-box .input-box span{
+    position: relative;
+    top: .2rem;
+    left: .75rem;
+    display: inline-block;
+}
+
+.content-box .form-box .input-box svg{
+    color: #666360;
+}
+
+.content-box .form-box .input-text{
+    background: #F4F4F4;
+    border-radius: 10px;
+}
+/*CHECKBOX - REMEMBER-ME*/
+.content-box .form-box .input-remember[type=checkbox]{
+    background: #2A88C8;
+}
+.content-box .form-box .input-remember {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+/*LINK - ESQUECI-SENHA*/
+.esqueci-senha{
+    color:#000000;
+    text-decoration: none;
+}
+.esqueci-senha:hover{
+    color:rgb(42, 136, 200);
+    text-decoration: underline;
+    text-shadow: 0px 4px 4px rgba(42, 136, 200, 0.25);
+}
+/*LINK - CRIAR-CONTA*/
+.content-box .form-box .criar-conta{
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    color:#000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+.content-box .form-box .criar-conta:hover{
+    color:rgb(42, 136, 200);
+    text-decoration: underline;
+}
+/*BOTAO - ENTRAR*/
+.botao{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 2.15384615;
+    min-height: 30px;
+    margin: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.content-box .form-box .botao-conectar{
+    font-weight: bold;
+    color:#FFFFFF;
+    background-color: #2A88C8;
+    padding: 4px 30px;
+    border-color: #2A88C8;
+    width: 100%;
+}
+.content-box .form-box .botao-conectar:hover{
+    background-color:#000;
+    border-color: #000;
+    transition: background-color .3s ease,color .3s ease;
+
+}
+
+/*MEDIA SCREEN - MOBILE*/
+@media (min-width: 767px){
+    .container-login .bg-box{
+        min-height: 100%;
+        background: url('bg-container_tablet.png') center no-repeat;
+        background-position: right;
+        background-size: cover;
+    }
+    .container-login .content-box{
+        min-height: 100%;
+        background: #FFFFFF;
+    }
+    .container-login .content-box .form-box{
+        margin:25% auto;
+        padding: 1.2rem;
+        max-width: 400px;
+    }
+        
+    .container-login .content-box{
+        position:absolute;
+        left:0;
+        width: 50%;
+        height: 50%;
+        padding:0 15px;
+    }
+}
+
+/*MEDIA SCREEN - LEPTOP*/
+@media (min-width:1024px){
+    .container-login .bg-box{
+        background: url('bg-container_leptop.png') right no-repeat;
+        background-size: cover;
+    }
+    .container-login .content-box .form-box{
+        padding: 1rem;
+        max-width: 372px;
+    }
+}
+/*MEDIA SCREEN - DESKTOP*/
+@media (min-width: 1366px){
+    .container-login{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-login .bg-box{
+        background: url('bg-container.png')  right no-repeat;
+        background-size: cover;
+    }
+    .container-login .content-box .form-box {
+        margin: 15% auto;
+    }
+}
