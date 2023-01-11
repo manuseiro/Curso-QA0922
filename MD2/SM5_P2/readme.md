@@ -1,77 +1,13 @@
-## ATIVIDADES: semana 5 do Módulo 2: Criação de sites HTML/CSS, GIT para controle de versão e SQL. (parte 2)
 
-Agora que você já sabe como utilizar o SGBD Postgres para criar uma base de dados, as tabelas e relacionamentos necessários, está na hora de se aprofundar na execução de comandos SQL.
 
-1. Nesta atividade, utilize as tabelas Animal e Dono (dos exercícios mostrados nos vídeos), para:
+## ATIVIDADES 3 semana 5 do Módulo 2: Criação de sites HTML/CSS, GIT para controle de versão e SQL. (parte 2)
 
-- Criar a tabela Animal com os atributos: codanimal, nome, especie, sexo, cor e coddono
-```bash
-CREATE TABLE animal (
-	codAnimal INT NOT NULL,
-	nome VARCHAR(255),
-	especie VARCHAR(150),
-	sexo VARCHAR(150),
-	cor VARCHAR(150),
-	raca VARCHAR(150),
-	peso DECIMAL(7,2),
-	codDono INT, 
-	PRIMARY KEY(codAnimal),
-	CONSTRAINT fk_peso FOREIGN KEY (peso) REFERENCES peso (peso),
-	CONSTRAINT fk_codDono FOREIGN KEY (codDono) REFERENCES dono (codDono)
-);
-```
-Resultado:
-| codAnimal | nome | especie | sexo | cor | raca | peso | codDono |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| ... | ... | ... | ... | ... | ... | ... | ... |
+Nesta segunda semana de projeto, a atividade será a seguinte:
 
-- Criar a tabela Dono com os campos: coddono, nome, bairro
-```bash
-CREATE TABLE dono (
-	codDono INT NOT NULL ,
-	nome VARCHAR(150),
-	email VARCHAR(150),
-	cpf VARCHAR(150),
-	telFixo VARCHAR(150),
-	rg VARCHAR(150),
-	telCel VARCHAR(150),
-	logradouro VARCHAR(150),
-	num INT,
-	complemento VARCHAR(150),
-	bairro VARCHAR(150),
-	cidade VARCHAR(150),
-	uf CHAR(2),
-	cep VARCHAR(150),
-	PRIMARY KEY (codDono)
-);
-```
-Resultado:
-| codDono | nome | email | cpf | telFixo | rg | telCel | logradouro | num | complemento | bairro | cidade | uf | cep |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
-
-- Definir uma subconsulta para retornar o nome do `ANIMAL` cujo `DONO` mora no bairro Vila Nova
-```bash
-SELECT nome 
-FROM animal 
-WHERE codDono =(
-	SELECT codDono 
-	FROM dono 
-	WHERE bairro='Vila Velha'
-);
-```
-- Definir uma consulta com join para retornar os Donos (mesmo que não tenham pets associados) e a quantidade de pets que cada um possui
-```bash
-SELECT dono.nome as "Donos", count(animal.nome) as "Quantidade de pets" 
-FROM dono 
-LEFT OUTER JOIN animal ON dono.coddono = animal.coddono 
-GROUP BY "Donos"
-;
-```
-
-A partir dessas consultas é possível criar outros comandos para obter resultados mais específicos, além de juntar a utilização de operadores.
-
-Como resultado, envie os comandos salvos em um arquivo de texto (.txt) para correção.
+- Crie uma página HTML para utilizar como portfólio pessoal com base em um Modelo.
+--- Inclua habilidades: Teste de sistema manual, HTML/CSS, SQL e GIT
+- Crie um novo repositório no Github para incluir os arquivos html e css desta página do portfólio.
+--- Adicione o link do repositório Github no portfólio pessoal em HTML
 
 
 ## REFERÊNCIA:
