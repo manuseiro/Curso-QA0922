@@ -1,4 +1,6 @@
---- Aqui estão algumas instruções: 
+## ATIVIDADE 1:  Módulo 3. Programação JavaScript (JS) e teste de unidade. Semana 1 - JavaScript básico 1: Introdução à programação, ao JavaScript e exemplos reais usando comandos
+
+Aqui estão algumas instruções: 
 
 - Primeiramente, precisamos instalar NodeJs, seguindo as instruções encontradas no material;
 - Depois; instale o Npm no seu computador;
