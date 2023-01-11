@@ -1,127 +1,57 @@
-# Curso Analista de teste de software - (QA0922) - Módulo 3
-Repositorio para as atividades execultadas no Curso Analista de teste de software
+#Analista de testes de software?
+
+A área de Quality Assurance (QA) é uma das áreas mais bem remuneradas do campo de TI e também uma das formas mais fáceis de ingressar nesse setor - mesmo que você ainda não tenha nenhuma habilidade em programação.
+
+O Analista de Testes de Software é responsável por planejar e coordenar testes durante o desenvolvimento de um software, revisar a qualidade e documentos de projetos técnicos para fornecer respostas relevantes às partes interessadas quanto ao trabalho em andamento.
+
+O que eu aprendo no curso?
+
+### Ferramentas de testes de software
+Você vai saber como planejar e coordenar testes durante o desenvolvimento de um software, revisar documentos de projetos técnicos para fornecer respostas relevantes às partes interessadas quanto ao trabalho em andamento
+
+### Testes de APIs
+No curso de QA você também vai aprender como utilizar ferramentas de teste automatizado para identificar o funcionamento correto de APIs que comunicam e integram diferentes sistemas
+
+### JavaScript e automação de testes
+Quando falamos que não é necessário saber programação antes deste Curso de Quality Assurance, é porque aqui você vai aprender a linguagem de programação mais popular do planeta e como fazer testes automatizados em JS
+
+# Ferramentas
+Essas serão as ferramentas e técnicas que você aprenderá a usar no curso de tester de software:
+SQL, Testes ágeis + Scrum, Jira, Javascript, Selenium, Postman, Restful API, Git/Github, Docker, NodeJs, Swagger, BDD/Cucumber, HTML/CSS, Git/Github, Restful API, Docker.
+
+1. Testes manuais
+2. Testes automatizados
+3. Testes móveis
+4. Lógica de programação
+
+#O programa do curso atinge os requisitos para uma vaga de Analista de testes Júnior:
 
 
-## ATIVIDADE 1:  Módulo 3. Programação JavaScript (JS) e teste de unidade. Semana 1 - JavaScript básico 1: Introdução à programação, ao JavaScript e exemplos reais usando comandos
-
-Aqui estão algumas instruções: 
-
-- Primeiramente, precisamos instalar NodeJs, seguindo as instruções encontradas no material;
-- Depois; instale o Npm no seu computador;
-- Com as instalações já feitas, pedimos que você crie um algoritmo lógico para uma situação descrita.
-
-Crie um algoritmo para efetuar a leitura de duas notas para um determinado aluno. Realize o cálculo da média aritmética, exiba a nota obtida na tela e verifique se a nota é maior ou menor que 6. Se for maior, exiba o texto “Aprovado”, se for menor, exiba “Reprovado”.
-
-Para envio da atividade, pedimos que você crie um documento (PDF ou Google Doc) com os seguintes elementos:
-
-- Print screen do terminal mostrando:
-```bash
-node -v
-npm -v
-```
-Texto do algoritmo:
-```bash
-// Lê a primeira nota
-var nota1 = parseFloat(prompt("Digite a primeira nota:"));
-
-// Lê a segunda nota
-var nota2 = parseFloat(prompt("Digite a segunda nota:"));
-
-// Calcula a média aritmética
-var media = (nota1 + nota2) / 2;
-
-// Exibe a nota obtida
-console.log("A nota obtida é: " + media);
-
-// Verifica se a nota é maior ou menor que 6
-if (media >= 6) {
-    console.log("Aprovado");
-} else {
-    console.log("Reprovado");
-}
-```
-
-## ATIVIDADE 2: Módulo 3. Programação JavaScript (JS) e teste de unidade. Semana 2 - JavaScript básico 2: exemplos de JavaScript básico no VSCode
-Crie um programa Javascript baseado nas tarefas descritas a seguir:
-
-1. Crie um array com 10 elementos e mostre-os na tela usando cada uma das estruturas de repetição: 
-while, do-while, for e foreach.
-```bash
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-// Estrutura de repetição while
-let i = 0;
-while (i < arr.length) {
-    console.log(arr[i]);
-    i++;
-}
-
-// Estrutura de repetição do-while
-i = 0;
-do {
-    console.log(arr[i]);
-    i++;
-} while (i < arr.length);
-
-// Estrutura de repetição for
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-}
-
-// Estrutura de repetição forEach
-arr.forEach(function(element) {
-    console.log(element);
-});
-```
-2. Faça um algoritmo para exibir a tabuada de 2. O resultado na tela deve ser algo parecido com isso:
-
-resultado:
-// Resultado esperado
-2 x 1 = 2
-2 x 2 = 4
-2 x 3 = 6
-2 x 4 = 8
-2 x 5 = 10
-2 x 6 = 12
-2 x 7 = 14
-2 x 8 = 16
-2 x 9 = 18
-2 x 10 = 20
-
-```bash
-for (let i = 1; i <= 10; i++) {
-    console.log(`2 x ${i} = ${2 * i}`);
-}
-```
+### Módulo 1. Teste de software manual em aplicação web 
+Neste módulo você aprenderá teorias de qualidade de software e tipos de teste. Irá compreender sobre o ciclo de vida do desenvolvimento e a arquitetura de software.
 
 
- 3. Crie um array com 5 números reais, e para cada elemento utilize funções matemáticas para exibir respectivamente:
+### Módulo 2. Criação de site HTML/CSS, GIT para controle de versão e SQL 
+Você vai aprender a fazer sites em HTML/CSS que é a base para desenvolver qualquer aplicação web. Poderá realizar consultas e fazer scripts para banco de dados relacional com SQL.
 
-a. O quadrado
-b. A raiz quadrada
-c. Apenas a parte inteira
-d. O número arredondado para baixo
-e. O número arredondado para cima
 
-Arquivo em formato .js com essas respostas
+### Módulo 3. Programação JavaScript (JS) e teste de unidade 
+Conhecimento em lógica de programação é um requisito básico para quem quer evoluir na carreira de teste de software. A linguagem JavaScript é utilizada por diversas aplicações e tem essa fama por ser versátil na construção de aplicações web ou mobile, através de diferentes frameworks.
 
-```bash
+### Módulo 4. Teste de integração para Restful API
+Com o crescente aumento da demanda por aplicativos móveis, empresas estão adaptando seus sistemas para microsserviços. A criação de uma Restful API é uma das maneiras que serviços web estão sendo migrados.
 
-```
-## ATIVIDADE 3: Módulo 3. Programação JavaScript (JS) e teste de unidade. Semana 2
 
-Vamos praticar um pouco mais?
+### Módulo 5. Teste de sistema automatizado em aplicação web 
+Em processos ágeis, onde os sistemas são lançados periodicamente, há uma grande necessidade de realização de testes automatizados para permitir que os sistemas sejam verificados durante cada entrega do sistema.
 
-Assista ao vídeo disponibilizado pelo prof. Rodrigo e tente reproduzir os comandos apresentados.
 
-Aproveite a aula ao vivo para fazer perguntas e praticar um pouco mais!
+### Módulo 6. Teste de sistema manual em aplicativos móveis 
+Neste módulo do curso de Analista de Testes de Software, você irá aprender sobre o funcionamento de aplicativos móveis, seus diferentes tipos e as diferenças entre os dispositivos. Compreender estas diferenças vai permitir que os testes manuais de aplicativos, que você irá produzir, serão realizados de forma mais eficiente. Pois serão considerados cenários, em que diferentes eventos podem ocorrer durante o uso do sistema
 
 # REFERÊNCIA:
 
- - [Lógica de Programação](https://www.devmedia.com.br/logica-de-programacao-introducao-a-algoritmos-e-pseudocodigo/37918/checklist-de-testes-de-seguran%C3%A7a-para-qas-fef900b798b6)
- - [Configurando o Node](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/development_environment#instalando_o_node)
- - [Introdução a JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)
- - [Guia JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)
- - [10 Dicas para se Tornar Ninja em JavaScript](https://medium.com/womakerscode/10-dicas-para-se-tornar-ninja-em-javascript-31a963ad17a1)
- - [JavaScript para quem sabe nada de JavaScript](https://medium.com/reprogramabr/javascript-pra-quem-sabe-nada-de-javascript-16c0d57a8960)
- - [Como o Javascript funciona: entendendo as funções e suas formas de uso](https://medium.com/reactbrasil/como-o-javascript-funciona-entendendo-as-fun%C3%A7%C3%B5es-e-suas-formas-de-uso-eb387c7fa138)
+![Curso QA - Analista de Testes de Software](https://promo.ultima.school/qa)
+
+
+
