@@ -51,7 +51,7 @@ Neste módulo do curso de Analista de Testes de Software, você irá aprender so
 
 # REFERÊNCIA:
 
--[Curso QA - Analista de Testes de Software](https://promo.ultima.school/qa)
+- [Curso QA - Analista de Testes de Software](https://promo.ultima.school/qa)
 
 
 
