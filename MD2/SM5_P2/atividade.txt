@@ -1,0 +1,188 @@
+## CRIAR TABELAS 
+
+Execulte o script abaixo para criar a tabela **`ANIMAL`**
+
+```bash
+CREATE TABLE animal (
+	codAnimal INT NOT NULL,
+	nome VARCHAR(255),
+	especie VARCHAR(150),
+	sexo VARCHAR(150),
+	cor VARCHAR(150),
+	raca VARCHAR(150),
+	peso DECIMAL(7,2),
+	codDono INT, 
+	PRIMARY KEY(codAnimal),
+	CONSTRAINT fk_peso FOREIGN KEY (peso) REFERENCES peso (peso),
+	CONSTRAINT fk_codDono FOREIGN KEY (codDono) REFERENCES dono (codDono)
+);
+```
+
+Resultado:
+| codAnimal | nome | especie | sexo | cor | raca | peso | codDono |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ... | ... | ... | ... | ... | ... | ... | ... |
+
+## INSERIR DADOS NA TABELA ANIMAL
+Execulte o script abaixo para inserir dados na tabela **`ANIMAL`**
+```bash
+INSERT INTO animal 
+	(codAnimal, nome,especie, sexo,cor,raca,peso, codDono) 
+VALUES 	('1', 'Ralph', 'Macho','Cachorro', 'Caramelo','Chow Chow','7.5'),
+	('2', 'Gordie', 'Macho','Cachorro','Marrom','Bull terrier','3.5' ),
+	('3', 'Porter', 'Macho','Cachorro','Branco e Caramelo','Chihuahua','2.3' ),
+	('4', 'Blake', 'Macho','Cachorro','Preto','Duldogue','4.5' ),
+	('5', 'Baron', 'Macho','Cachorro','Branco','Pitbull','6.8' ),
+	('6', 'Darla', 'Femea','Cachorro','Branco','Borzoi','5.2' ),
+	('7', 'Sugar', 'Feminino','Cachorro','Marrom','Boxer','8.9' ),
+	('8', 'Eva', 'Feminino','Cachorro','Preto e Branco','American Bully','5.3' ),
+	('9', 'Mia','Feminino','Cachorro','Branco e Preto','Dálmata','7.6' ),
+	('10', 'Kona','Feminino','Cachorro','Caramelo','Beagle','3.9' )
+;
+```
+Resultado:
+| codAnimal | nome | especie | sexo | cor | raca | peso | codDono |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | Ralph | Macho | Cachorro | Caramelo | Chow Chow | 7.5 | ... | 
+| 2 | Gordie | Macho | Cachorro | Marrom | Bull terrier | 3.5 | ... | 
+| 3 | Porter | Macho | Cachorro | Branco e Caramelo | Chihuahua | 2.3 | ... | 
+| 4 | Blake | Macho | Cachorro | Preto | Duldogue | 4.5 | ... | 
+| 5 | Baron | Macho | Cachorro | Branco | Pitbull | 6.8 | ... | 
+| 6 | Darla | Fêmea | Cachorro | Branco | Borzoi | 5.2 | ... | 
+| 7 | Sugar | Fêmea | Cachorro | Marrom | Boxer | 8.9 | ... | 
+| 8 | Eva | Fêmea | Cachorro | Preto e Branco | American Bully | 5.3 | ... | 
+| 9 | Mia | Fêmea | Cachorro | Branco e Preto | Dálmata | 7.6 | ... |
+| 10 | Kona | Fêmea | Cachorro | Caramelo | Beagle | 3.9 | ... | 
+
+## CRIAR TABELA DONO
+
+Execulte o script abaixo para criar a tabela **`DONO`**
+```bash
+CREATE TABLE dono (
+	codDono INT NOT NULL ,
+	nome VARCHAR(150),
+	email VARCHAR(150),
+	cpf VARCHAR(150),
+	telFixo VARCHAR(150),
+	rg VARCHAR(150),
+	telCel VARCHAR(150),
+	logradouro VARCHAR(150),
+	num INT,
+	complemento VARCHAR(150),
+	bairro VARCHAR(150),
+	cidade VARCHAR(150),
+	uf CHAR(2),
+	cep VARCHAR(150),
+	PRIMARY KEY (codDono)
+);
+```
+
+Resultado:
+| codDono | nome | email | cpf | telFixo | rg | telCel | logradouro | num | complemento | bairro | cidade | uf | cep |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+## INSERIR DADOS NA TABELA DONO
+Execulte o script abaixo para inserir dados na tabela **`DONO`**
+```bash
+INSERT INTO dono(
+	codDono, nome, email, cpf, telFixo, rg, telCel, logradouro, num, complemento, bairro, cidade, uf, cep
+)  
+VALUES 
+	('1', 'Allana','john@exemplo.com','62543822453','8526809329','265024730','85987207311','Rua Engenheiro Lima Verde', '784','','Álvaro Weyne','Fortaleza','CE','60337270' ),
+	('2', 'Gabrielly Mariane Dias','gabrielly.mariane.dias@ericsson.com','94868802631','6229248802','420380668','62996212731','Rua da Vitória', '663','','Setor Grajaú','Goiânia','GO','74354301' ),
+	('3', 'Isabella Maitê Jesus','isabella.maite.jesus@ecotransambiental.com.br','48285262774','8638826333','297531980','86984437404','Alameda Domingos Jorge Velho"','808','','Poti Velho','Teresina','PI','64004800' ),
+	('4', 'Elza Clara Barros','elzaclarabarros@decorsul.com','84206695121','8625630769','315058468','86987808219','Rua da Vitória','582','','Setor Grajaú','Teresina','PI','64013490' ),
+	('5', 'Joaquim Matheus da Luz','"joaquimmatheusdaluz@iquattro.com.br','19911483720','2228522344','187982892','22997862763','Rua Fernando de Noronha','202','','Palmeiras','Cabo Frio','RJ','28911290' ),
+	('6', 'Márcio Lorenzo Vitor das Neves','marciolorenzodasneves@fertau.com.br','83712747853','3139401441','227283272','31982965991','Rua Etelvina Moreira de Carvalho', '250','','Maria Helena','Belo Horizonte','MG','31655515' ),
+	('7', 'Luna Giovanna Vanessa Pires','maria@gmail.com','32432188373','8525381524','293646028','85998590526','Rua 7', '559','','Vila Velha','Fortaleza','CE','60347590' )
+;
+```
+
+Resultado:
+| codDono | nome | email | cpf | telFixo | rg | telCel | logradouro | num | complemento | bairro | cidade | uf | cep |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | Allana | allana@gmail.com | 62543822453 | 8526809329 | 265024730 | 85987207311 | Rua Engenheiro Lima Verde | 784 | ... | Álvaro Weyne | Fortaleza | CE | 60337270 |
+| 2 | Gabrielly | gabrielly@gmail.com | 94868802631 | 6229248802 | 420380668 | 62996212731 | Rua da Vitória | 663 | ... | Setor Grajaú | Goiânia | GO | 74354301 |
+| 3 | Isabella | isabella@gmail.com | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| 4 | Elza | elza@gmail.com | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| 5 | Joaquim | joaquim@gmail.com | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| 6 | Márcio | marcio@gmail.com | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| 7 | Luna | maria@gmail.com | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+## CRIAR TABELA CONSULTA_AGENDA
+Execulte o script abaixo para criar a tabela **`CONSULTA_AGENDA`**
+```bash
+CREATE TABLE consulta_agenda (
+	codCons INT  NOT NULL ,
+	data date,
+	diagnostico VARCHAR(255),
+	preco decimal(7,2),
+	hora time,
+	codDono INT,
+	codAnimal INT,
+	codAtend INT,
+	codVet INT,
+	PRIMARY KEY(codCons),
+	CONSTRAINT fk_codAnimal FOREIGN KEY (codAnimal) REFERENCES animal (codAnimal),
+	CONSTRAINT fk_codDono FOREIGN KEY (codDono) REFERENCES dono (codDono),
+	CONSTRAINT fk_codVet FOREIGN KEY (codVet) REFERENCES veterinario (codVet),
+	CONSTRAINT fk_codAtend FOREIGN KEY (codAtend) REFERENCES atendente (codAtend)
+);
+```
+## CRIAR TABELA ATENDENTE
+Execulte o script abaixo para criar a tabela **`ATENDENTE`**
+```bash
+CREATE TABLE atendente (
+	codAtend INT NOT NULL,
+	cpf VARCHAR(150),
+	nome VARCHAR(150),
+	email VARCHAR(150),
+	rg VARCHAR(150),
+	telFixo VARCHAR(150),
+	telCel VARCHAR(150),
+	PRIMARY KEY(codAtend)
+);
+```
+## CRIAR TABELA VETERINARIO
+Execulte o script abaixo para criar a tabela **`VETERINARIO`**
+```bash
+CREATE TABLE veterinario (
+	codVet INT NOT NULL,
+	nome VARCHAR(150),
+	cpf VARCHAR(150),
+	telCel VARCHAR(150),
+	telFixo VARCHAR(150),
+	crmv VARCHAR(150),
+	email VARCHAR(150),
+	logradouro VARCHAR(150),
+	num INT,
+	complemento VARCHAR(150),
+	cidade VARCHAR(150),
+	uf CHAR(2),
+	cep VARCHAR(150),
+	PRIMARY KEY(codVet)
+);
+```
+
+## CONSULTAR DADOS NA TABELA
+
+Definir uma subconsulta para retornar o nome do `ANIMAL` cujo `DONO` mora no bairro Vila Nova
+```bash
+SELECT nome 
+FROM animal 
+WHERE codDono =(
+	SELECT codDono 
+	FROM dono 
+	WHERE bairro='Vila Velha'
+);
+```
+
+Definir uma consulta com join para retornar os Donos (mesmo que não tenham pets associados) e a quantidade de pets que cada um possui
+```bash
+SELECT dono.nome as "Donos", count(animal.nome) as "Quantidade de pets" 
+FROM dono 
+LEFT OUTER JOIN animal ON dono.coddono = animal.coddono 
+GROUP BY "Donos"
+;
+```
