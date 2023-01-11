@@ -10,7 +10,7 @@ Para envio da atividade, pedimos que você crie um documento (PDF ou Google Doc)
 
 - Print screen do terminal mostrando:
 ```bash
-        node -v
-		npm -v
+node -v
+npm -v
 ```
 Texto do algoritmo
