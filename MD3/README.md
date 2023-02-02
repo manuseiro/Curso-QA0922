@@ -21,7 +21,7 @@ node -v
 npm -v
 ```
 Texto do algoritmo:
-```bash
+```javascript
 // Lê a primeira nota
 var nota1 = parseFloat(prompt("Digite a primeira nota:"));
 
@@ -47,7 +47,7 @@ Crie um programa Javascript baseado nas tarefas descritas a seguir:
 
 1. Crie um array com 10 elementos e mostre-os na tela usando cada uma das estruturas de repetição: 
 while, do-while, for e foreach.
-```bash
+```javascript
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Estrutura de repetição while
@@ -89,7 +89,7 @@ resultado:
 2 x 9 = 18
 2 x 10 = 20
 
-```bash
+```javascript
 for (let i = 1; i <= 10; i++) {
     console.log(`2 x ${i} = ${2 * i}`);
 }
@@ -106,7 +106,7 @@ e. O número arredondado para cima
 
 Arquivo em formato .js com essas respostas
 
-```bash
+```javascript
 let numbers = [3.14, 2.718, 1.618, 0.577, 1.234];
 
 numbers.forEach(function(element) {
