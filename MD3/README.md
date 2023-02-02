@@ -15,7 +15,7 @@ Crie um algoritmo para efetuar a leitura de duas notas para um determinado aluno
 
 Para envio da atividade, pedimos que você crie um documento (PDF ou Google Doc) com os seguintes elementos:
 
-- Print screen do terminal mostrando:
+![Print screen do terminal mostrando:](SM1/ATV1/terminal.png)
 ```bash
 node -v
 npm -v
