@@ -17,19 +17,14 @@ npm -v
 ```
 Texto do algoritmo:
 ```bash
-// Lê a primeira nota
-var nota1 = parseFloat(prompt("Digite a primeira nota:"));
+let nt1 = 5;
+let nt2 = 6; 
+let media;
 
-// Lê a segunda nota
-var nota2 = parseFloat(prompt("Digite a segunda nota:"));
+media = (nt1 + nt2) / 2 ; 
 
-// Calcula a média aritmética
-var media = (nota1 + nota2) / 2;
+console.log("A nota é: " + media);
 
-// Exibe a nota obtida
-console.log("A nota obtida é: " + media);
-
-// Verifica se a nota é maior ou menor que 6
 if (media >= 6) {
     console.log("Aprovado");
 } else {
@@ -40,34 +35,15 @@ if (media >= 6) {
 ## ATIVIDADE 2: Módulo 3. Programação JavaScript (JS) e teste de unidade. Semana 2 - JavaScript básico 2: exemplos de JavaScript básico no VSCode
 Crie um programa Javascript baseado nas tarefas descritas a seguir:
 
-1. Crie um array com 10 elementos e mostre-os na tela usando cada uma das estruturas de repetição: 
+1. Crie um meuArrayay com 10 elementos e mostre-os na tela usando cada uma das estruturas de repetição: 
 while, do-while, for e foreach.
 ```bash
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let meuArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// Estrutura de repetição while
-let i = 0;
-while (i < arr.length) {
-    console.log(arr[i]);
-    i++;
+
+for (let index in meuArray) {
+    console.log(meuArray[index]);
 }
-
-// Estrutura de repetição do-while
-i = 0;
-do {
-    console.log(arr[i]);
-    i++;
-} while (i < arr.length);
-
-// Estrutura de repetição for
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-}
-
-// Estrutura de repetição forEach
-arr.forEach(function(element) {
-    console.log(element);
-});
 ```
 2. Faça um algoritmo para exibir a tabuada de 2. O resultado na tela deve ser algo parecido com isso:
 
@@ -91,18 +67,26 @@ for (let i = 1; i <= 10; i++) {
 ```
 
 
- 3. Crie um array com 5 números reais, e para cada elemento utilize funções matemáticas para exibir respectivamente:
+ 3. Crie um meuArrayay com 5 números reais, e para cada elemento utilize funções matemáticas para exibir respectivamente:
 
 a. O quadrado
 b. A raiz quadrada
 c. Apenas a parte inteira
-d. O número arredondado para baixo
-e. O número arredondado para cima
+d. O número meuArrayedondado para baixo
+e. O número meuArrayedondado para cima
 
 Arquivo em formato .js com essas respostas
 
 ```bash
+let numbers = [3.14, 2.718, 1.618, 0.577, 1.234];
 
+numbers.forEach(function(element) {
+    console.log(`O quadrado de ${element} é: ${element * element}`);
+    console.log(`A raiz quadrada de ${element} é: ${Math.sqrt(element)}`);
+    console.log(`Apenas a parte inteira de ${element} é: ${Math.floor(element)}`);
+    console.log(`Arredondando para baixo ${element} é: ${Math.floor(element)}`);
+    console.log(`Arredondando para cima ${element} é: ${Math.ceil(element)}`);
+});
 ```
 
 # REFERÊNCIA:

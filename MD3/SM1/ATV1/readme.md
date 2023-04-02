@@ -17,19 +17,16 @@ npm -v
 ```
 Texto do algoritmo:
 ```bash
-// Lê a primeira nota
-var nota1 = parseFloat(prompt("Digite a primeira nota:"));
+var media, nt1, nt2;
 
-// Lê a segunda nota
-var nota2 = parseFloat(prompt("Digite a segunda nota:"));
+nt1= prompt ("Informe a primeira nota: ") ;
+nt1= eval (nt1) ;
 
-// Calcula a média aritmética
-var media = (nota1 + nota2) / 2;
+nt2= prompt ("Informe a segunda nota: ") ;
+nt2= eval (nt2) ; 
 
-// Exibe a nota obtida
-console.log("A nota obtida é: " + media);
+media = (nt1 + nt2)/2 ; 
 
-// Verifica se a nota é maior ou menor que 6
 if (media >= 6) {
     console.log("Aprovado");
 } else {
@@ -42,3 +39,6 @@ if (media >= 6) {
  - [Lógica de Programação](https://www.devmedia.com.br/logica-de-programacao-introducao-a-algoritmos-e-pseudocodigo/37918/checklist-de-testes-de-seguran%C3%A7a-para-qas-fef900b798b6)
  - [Configurando o Node](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/development_environment#instalando_o_node)
  - [Introdução a JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction)
+- [JavaScript Progressivo ](https://www.javascriptprogressivo.net/2018/08/Calcular-Media-Aprovado-Reprovado-Exercicio-Resolvido-Codigo-Comentado.html)
+- [JavaScript Progressivo ](https://www.youtube.com/watch?v=gDJu-fjHbco)
+- [Github](https://gist.github.com/samueltcsantos/31532228a0a8d63bd824)
