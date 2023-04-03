@@ -1,0 +1,14 @@
+POST /InvestidorB3 HTTP/1.1
+Host: investidor.b3.com.br
+Content-Type: text/xml; charset="utf-8"
+Content-Length: nnnn
+SOAPAction: "http://investidor.b3.com.br/GetLastTradePrice"
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:b3="http://investidor.b3.com.br">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <b3:GetLastTradePrice>
+         <b3:symbol>B3SA3</b3:symbol>
+      </b3:GetLastTradePrice>
+   </soapenv:Body>
+</soapenv:Envelope>
