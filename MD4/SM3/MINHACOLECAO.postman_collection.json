@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "c70aff5b-57e9-46ae-85f1-b0737f3dcf00",
+		"name": "MINHA COLECAO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26699214"
+	},
+	"item": [
+		{
+			"name": "{{url}}/users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Check if user with id1 is Leanne Graham\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].name).to.eql(\"Leanne Graham\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[ \r\n    { \r\n        \"id\": 11, \r\n        \"name\": \"Teste Curso\", \r\n        \"username\": \"Bret\", \r\n        \"email\": \"Sincere@april.biz\", \r\n        \"address\": { \r\n            \"street\": \"Kulas Light\" , \r\n            \"suite\": \"Apt. 556\", \r\n            \"city\": \"Gwenborough\", \r\n            \"zipcode\": \"92998-3874\", \r\n            \"geo\": { \r\n                \"lat\": \"-37.3159\", \r\n                \"lng\": \"81.1496\" \r\n            } \r\n        }, \r\n        \"telefone\": \"1-770-736-8031 x56442\", \r\n        \"site\": \"hildegard.org\", \r\n        \"empresa\": { \r\n            \"nome\": \"Romaguera-Crona\",\r\n            \"catchPhrase\": \"Rede neural cliente-servidor de várias camadas\", \r\n            \"bs\": \"aproveite os mercados eletrônicos em tempo real\" \r\n        } \r\n    } \r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://jsonplaceholder.typicode.com/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

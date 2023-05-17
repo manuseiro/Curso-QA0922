@@ -1,0 +1,12 @@
+Agora vamos praticar um pouco?
+
+1. Primeiro instale o Postman no seu computador e entenda as etapas. São bem simples, mas o entendimento auxiliará caso precisemos fazer o uso de outras ferramentas para teste.
+2. Faça as práticas de testes manuais no Postman e documente com um roteiro de teste fazendo a consulta (GET) com sufixos:
+	a. /?name=Ervin Howell
+	b. /2
+	c. /?Samantha
+3. Salve na coleção todas as pesquisas e crie pesquisas variadas sobre nossa API de teste.
+
+Como resultado, você deverá produzir um PDF com o print screen da execução do Postman.Teve alguma dificuldade em executar essa atividade ou alguma dúvida sobre o conteúdo da semana? Fale com seu tutor no Discord!
+
+Você pode só enviar sua dúvida pelo chat ou marcar uma sessão 1:1 de dúvidas, o que fizer mais sentido para você. Bons estudos!

@@ -1,0 +1,19 @@
+{
+  "name": "express-swagger-docs",
+  "version": "1.0.0",
+  "description": "Automatically generate swagger docs based on jsdocs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "swagger-jsdoc": "^4.3.2",
+    "swagger-ui-express": "^4.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
