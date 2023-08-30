@@ -4,17 +4,26 @@
 Elaboração e apresentação de planos de negócio de investimento e custeio para clientes de todos os setores da economia. 
 
 ## Detalhes do Teste:
-    30/08/2023 á 31/08/2023.
-    Versão: 1.1.35 - 25/07/2023
-    Windows 11 Pro versão 22H2
+- Peridodo: 30/08/2023 á 31/08/2023.
+- Versão: 1.1.35 - 25/07/2023
+- Sistema Operacional: Windows 11 Pro versão 22H2
 
 ### UC001 - Verificação de Acesso à Página de Login
+Descrição
+- Verificar se os usuários podem acessar a página de login. 
 
-    Objetivo: Verificar se os usuários podem acessar a página de login.
-    Passos:
-    a. Abra o navegador e insira o URL do sistema BNB - Plano de Negócio.
-    b. Verifique se a página de login é exibida.
-    Resultado Esperado: A página de login deve ser exibida corretamente.
+Perfil:
+- Usuário
+
+Pré-condições:
+- Computador ou notebook com acesso à internet, navegador web. 
+
+Caminho no sistema:
+https://app.bnb.gov.br/aplicacao/seap
+
+Passo:
+1. Abra o navegador e insira a URL do sistema BNB - Plano de Negócio.  
+2. Verifique se a página de login é exibida. 
 
 ### UC002 - Verificação de Login Válido
 
